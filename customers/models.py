@@ -11,3 +11,11 @@ class Customer(models.Model):
   company = models.CharField(max_length=200)
   city = models.CharField(max_length=200)
   title = models.CharField(max_length=200)
+
+  def __str__(self):
+    return f'''
+      Name: {self.first_name} {self.last_name}
+      Email: {self.email}
+      Title: {self.title}
+      Company: {self.company}
+    '''
