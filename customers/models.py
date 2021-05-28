@@ -11,6 +11,8 @@ class Customer(models.Model):
   company = models.CharField(max_length=200)
   city = models.CharField(max_length=200)
   title = models.CharField(max_length=200)
+  latitude = models.FloatField(null=True)
+  longitude = models.FloatField(null=True)
 
   def __str__(self):
     return f'''
@@ -18,4 +20,5 @@ class Customer(models.Model):
       Email: {self.email}
       Title: {self.title}
       Company: {self.company}
+      Location: {self.latitude} - {self.longitude}
     '''
