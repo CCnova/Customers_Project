@@ -43,7 +43,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'customers.apps.CustomersConfig',
-    'rest_framework',
     'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
