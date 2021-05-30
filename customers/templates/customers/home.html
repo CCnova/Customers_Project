@@ -1,0 +1,11 @@
+{% extends "customers/base.html" %}
+{% block content %}
+<h1> Welcome to Customers API </h1>
+<h3> Here is the endpoints we have available! </h3>
+<ul>
+    <li>
+        <p>To see all customers registered, click below</p>
+        <a href="{% url 'customers:list' %}">All Customers</a>
+    </li>
+</ul>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends 'customers/base.html' %}
+
+{% block content %}
+<h2>{{ customer.first_name }} {{ customer.last_name }}</h2>
+<p>Email: {{ customer.email }}</p>
+<p>Gender: {{ customer.geneder }}</p>
+<p>Company: {{ customer.company }}</p>
+<p>City: {{ customer.city }}</p>
+<p>Title: {{ customer.title }}</p>
+<p>Geo-location: {{ customer.latitude }}, {{ customer.longitude }}</p>
+
+<a href="{% url 'customers:list' %}">Voltar</a>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends 'customers/base.html' %}
+
+{% block content %}
+<h2>Customers</h2>
+{% if customers_list %}
+    <ul>
+        {% for customer in customers_list %}
+            <li><a href="{% url 'customers:detail' customer.id %}">{{ customer.first_name }} {{ customer.last_name}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>No customers are available.</h3>
+{% endif %}
+<a href="{% url 'customers:home' %}">Voltar</a>
+{% endblock content %}
