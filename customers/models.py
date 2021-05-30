@@ -1,5 +1,7 @@
 from django.db import models
 
+from customers.utils.geolocation_utils import getGeolocationFromAddress
+
 
 # Create your models here.
 class Customer(models.Model):
@@ -13,6 +15,12 @@ class Customer(models.Model):
   title = models.CharField(max_length=200)
   latitude = models.FloatField(null=True)
   longitude = models.FloatField(null=True)
+
+  def save(self, *args, **kwargs):
+    geolocation = getGeolocationFromAddress(self.city)
+    self.latitude = geolocation['latitude']
+    self.longitude = geolocation['longitude']
+    super().save(*args, **kwargs)
 
   def __str__(self):
     return f'''
