@@ -23,6 +23,12 @@ Running the populate command: <br /> <br />
 
     python manage.py load_customers
   
-  This will make the application load data from the customers csv file located in customers/data <br />
-    
+  This will make the application load data from the customers csv file located in customers/data <br /><br />
+
+You need an google maps API Key to populate the customer geo-location, you can search for instructions about how to get
+an API KEY here: https://developers.google.com/maps/documentation/geolocation/overview <br />
+After getting an API KEY, you need to create an .env file to populate with the key. Just copy the .env.example and rename
+to .env. Past you api key on the GOOGLE_MAPS_API_KEY field. <br /> <br />
+
+
 After you setup the project you can head to http://127.0.0.1:8000/api and start consuming the API from a simple webpage <br />
