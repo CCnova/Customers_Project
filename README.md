@@ -1,7 +1,7 @@
 Before jumping to the API you need Django installed, you can follow the instructions here: https://docs.djangoproject.com/en/3.2/intro/install/ <br /> <br />
 
 You can setup the project running one single command, open a terminal and type: <br />
-    python manage.py setup_project <br /> <br />
+    <b>python manage.py setup_project</b> <br /> <br />
 
 In case the above fail, you can follow the instructions below.
 
