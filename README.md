@@ -11,12 +11,12 @@ To run the application you need to install some packages first, please open a te
 Now execute the migrations to create the database structure: <br />
     python manage.py migrate <br /> <br />
 
-After installing the dependencies, you can populate the database with a pre-made script <br />
+After installing the dependencies, you can populate the database with a django management command <br />
 
-Running the populate script: <br /> <br />
+Running the populate command: <br /> <br />
   Open a terminal and run the command: <br />
 
-    python manage.py runscript load_customers
+    python manage.py load_customers
   
   This will make the application load data from the customers csv file located in customers/data <br />
     
