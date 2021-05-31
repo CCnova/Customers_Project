@@ -1,5 +1,10 @@
 Before jumping to the API you need Django installed, you can follow the instructions here: https://docs.djangoproject.com/en/3.2/intro/install/ <br /> <br />
 
+You can setup the project running one single command, open a terminal and type: <br />
+    python manage.py setup_project <br /> <br />
+
+In case the above fail, you can follow the instructions below.
+
 To run the application you need to install some packages first, please open a terminal and run this commands: <br />
 (1)    pip install django-extensions <br />
 (2)    pip install python-dotenv <br />
@@ -20,4 +25,4 @@ Running the populate command: <br /> <br />
   
   This will make the application load data from the customers csv file located in customers/data <br />
     
-After you populated the database you can head to http://127.0.0.1:8000/api and start consuming the API from a simple webpage <br />
+After you setup the project you can head to http://127.0.0.1:8000/api and start consuming the API from a simple webpage <br />
